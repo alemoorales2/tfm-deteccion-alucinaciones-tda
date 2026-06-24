@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfm-hallu"
+version = "0.1.0"
+description = "Motor experimental del TFM: detección de alucinaciones en LLMs mediante TDA"
+requires-python = ">=3.12"
+# Las dependencias se gestionan vía el lock de la raíz (requirements.txt), no aquí,
+# para tener una única fuente de verdad del entorno.
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tfm_hallu*"]
